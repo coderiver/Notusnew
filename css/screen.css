@@ -69,6 +69,7 @@ a:hover { text-decoration: none; }
 .header .catalog__text strong { display: block; }
 @media only screen and (max-width: 1200px) { .header .catalog__text { padding-right: 20px; } }
 .header .catalog__arr { display: inline-block; background: url('../img/icons-s121ebfacb4.png') 0 -215px no-repeat; width: 10px; height: 6px; vertical-align: middle; margin-left: 12px; position: relative; top: -2px; }
+.header .catalog__drop { display: none; }
 .header .search { float: left; margin: 6px 0 0 3.9%; width: 46.15%; }
 @media only screen and (max-width: 1200px) { .header .search { margin-left: 1%; } }
 @media only screen and (max-width: 1120px) { .header .search { width: 43%; } }
