@@ -212,6 +212,7 @@ a{
 	.search__category{
 		float: left;
 		width: 29%;
+		position: relative;
 	}
 	.search__category-text{
 		cursor: pointer;
@@ -220,18 +221,29 @@ a{
 		line-height: 35px;
 		color:#383838;
 		background: #eeeeee;
-		padding: 0 7% 0 13%;
+		padding: 0 10%;
 		width: 80%;
 		border-radius:3px 0 0 3px;
 		white-space: nowrap;
-		overflow: hidden;
+		span{
+			overflow: hidden;
+			width: 100%;
+			display: block;
+		}
 		@include background(linear-gradient(top, rgba(0,0,0,.04) 0%,rgba(0,0,0,.07) 66%,rgba(0,0,0,.07) 100%));
 	}
 	.search__arr{
-		display: inline-block;
-		vertical-align: middle;
+		display: block;
+		position: absolute;
+		top:50%;
+		margin-top: -6px;
+		right:7.5%;
 		@include sized-sprite($icons, "arr_b3");
-		margin-left: 10px;
+		background-color: #eee;
+		border:4px solid #eee;
+		@include respond-to(step1) {
+			right: 3%;
+		}
 	}
 	.search__category-drop{
 		display: none;
@@ -259,7 +271,6 @@ a{
 		background: #d6d5d5;
 		@include background(linear-gradient(top, #e5e4e4 0%,#d7d6d6 62%,#d6d5d5 100%));
 		box-shadow:0 1px 1px rgba(0,0,0,.4), 0 0 2px rgba(white,.1) inset;
-		//padding: 0 21px;
 		width: 18.4%;
 		text-align: center;
 		border:0;
@@ -286,6 +297,7 @@ a{
 		background: #0186dd;
 		@include background(linear-gradient(top, #03ace9 0%, #03a2e6 23%, #018ade 60%, #0186dd 71%, #0186dd 100%));
 		border-radius:3px;
+		cursor: pointer;
 		.basket__g{
 			float: left;
 			height: 36px;
@@ -296,6 +308,8 @@ a{
 			text-shadow:0 1px 0 rgba(white,.07);
 			padding: 0 10px;
 			border-radius:3px 0 0 3px;
+			text-align: center;
+			min-width: 62px;
 		}
 		.basket__b{
 			float: left;
@@ -303,7 +317,9 @@ a{
 			box-shadow: 0 0 2px rgba(white,.1) inset;
 			color:#fff;
 			text-shadow:0 1px 0 rgba(0,0,0,.3);
-			padding: 0 11px;
+			padding: 0 15px 0 11px;
+			min-width: 80px;
+			position: relative;
 		}
 		.basket__ico{
 			@include sized-sprite($icons, "basket");
@@ -315,8 +331,11 @@ a{
 		}
 		.basket__arr{
 			@include sized-sprite($icons, "arr_b5");
-			display: inline-block;
-			margin: 0 -3px 0 3px;
+			display: block;
+			position: absolute;
+			right: 8px;
+			top:50%;
+			margin-top: -3px;
 		}
 		.basket__num{
 			display: inline-block;
@@ -338,7 +357,22 @@ a{
 	}
 	.basket_empty{
 		.basket__ico{margin: 0;}
-		.basket__b, .basket__g{padding: 0 14px; }
+		.basket__b, .basket__g{
+			padding: 0 14px;
+			min-width: auto;
+		}
+	}
+	.basket_empty_big{
+		.basket__ico{margin: 0;}
+		.basket__b, .basket__g{
+			padding: 0 14px;
+			min-width: auto;
+		}
+		.basket__b{
+			width: 148px;
+			text-align: center;
+		}
+		.basket__g{width: 36px;}
 	}
 	.sign{
 		float: right;
