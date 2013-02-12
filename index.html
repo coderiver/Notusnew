@@ -9,94 +9,138 @@
 <body>
 <!-- BEGIN  header-->
 <div class="header">
-	<div class="header__top">
-		<div class="logo-holder">
-			<strong class="logo"><a href="#">NOTUS</a></strong>
-			<span>интернет-супермаркет</span>
-		</div>
+	<div class="header__holder">
+		<!-- BEGIN header__top -->
+		<div class="header__top">
+			<div class="logo-holder">
+				<strong class="logo"><a href="#">NOTUS</a></strong>
+				<span>интернет-супермаркет</span>
+			</div>
 
-		<div class="header__block1">
-			<div class="timetable"><span class="clock"></span>Ежедневно с 9:00 до 20:00</div>
-			<div class="choice">
-				<div class="choice__text">Город <a href="#">Липецк</a></div>
-				<div class="choice__arr"></div>
+			<div class="header__block1">
+				<div class="timetable"><span class="clock"></span>Ежедневно с 9:00 до 20:00</div>
+				<div class="choice">
+					<div class="choice__text">Город <a href="#">Липецк<span class="choice__arr"></span></a></div>
+					<div class="choice__drop"></div>
+				</div>
+			</div>
+
+			<div class="header__block2">
+				<div class="phone-num"><span class="phone"></span>(044) 379-18-92</div>
+				<div class="call-me"><a href="#">Перезвоните мне</a></div>
+			</div>
+
+			<div class="menu-top-holder">
+				<div class="menu-top-frame">
+					<ul class="menu-top">
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Отзывы клиентов</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END header__top -->
+
+		<!-- BEGIN  header__bottom -->
+		<div class="header__bottom">
+			<div class="catalog">
+				<div class="catalog__text">
+					<strong>Каталог</strong>
+					товаров магазина
+					<span class="catalog__arr"></span>
+				</div>
+				<div class="catalog__drop"></div>
+			</div>
+			<div class="search">
+				<form action="#">
+					<div class="search__holder">
+						<div class="search__category">
+							<div class="search__category-text">
+								Все категории
+								<span class="search__arr"></span>
+							</div>
+							<div class="search__category-drop"></div>
+						</div>
+						<div class="search__input"><input type="text" placeholder="Поиск"></div>
+					</div>
+					<input type="submit" class="search__btn" value="Искать">
+				</form>
+			</div>
+
+			<div class="choice_cy">
+				<div class="choice__text">Валюта: <a href="#">гривна<span class="choice__arr"></span></a></div>
 				<div class="choice__drop"></div>
 			</div>
-		</div>
-
-		<div class="header__block2">
-			<div class="phone-num"><span class="phone"></span>(044) 397-18-92</div>
-			<div class="call-me"><a href="#">Перезвони мне</a></div>
-		</div>
-
-		<div class="menu-top-holder">
-			<div class="menu-top-frame">
-				<ul class="menu-top">
-					<li><a href="#">О магазине</a></li>
-					<li><a href="#">Отзывы клиентов</a></li>
-					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">Сотрудничество</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<div class="basket">
+				<div class="basket__g"><span class="basket__ico"></span> Корзина <span class="basket__num">2</span></div>
+				<div class="basket__b">20 000 грн <span class="basket__arr"></span></div>
 			</div>
 		</div>
-	</div>
+		<!-- END header__bottom -->
 
-	<div class="header__bottom">
-		<div class="catalog">
-			<div class="catalog__text">
-				<strong>Каталог</strong>
-				товаров магазина
-				<span class="catalog__arr"></span>
-			</div>
-			<div class="catalog__drop"></div>
-		</div>
-		<div class="search">
-			<form action="#">
-				<div class="search__holder">
-					<div class="search__category">
-						<div class="search__category-text">
-							Все категории
-							<span class="search__arr"></span>
-						</div>
-						<div class="search__category-drop"></div>
-					</div>
-					<input type="text" placeholder="Поиск" class="search__input">
+		<!-- BEGIN  header__bottom -->
+		<div class="header__bottom">
+			<div class="catalog">
+				<div class="catalog__text">
+					<strong>Каталог</strong>
+					товаров магазина
+					<span class="catalog__arr"></span>
 				</div>
-				<input type="submit" class="search__btn" value="Искать">
-			</form>
-		</div>
+				<div class="catalog__drop"></div>
+			</div>
+			<div class="search">
+				<form action="#">
+					<div class="search__holder">
+						<div class="search__category">
+							<div class="search__category-text">
+								Все категории
+								<span class="search__arr"></span>
+							</div>
+							<div class="search__category-drop"></div>
+						</div>
+						<div class="search__input"><input type="text" placeholder="Поиск"></div>
+					</div>
+					<input type="submit" class="search__btn" value="Искать">
+				</form>
+			</div>
 
-		<div class="choice_cy">
-			<div class="choice__text">Валюта <a href="#">гривна</a></div>
-			<div class="choice__arr"></div>
-			<div class="choice__drop"></div>
-		</div>
-		<div class="basket">
-			<div class="basket__g"><span class="basket__ico"></span></div>
-			<div class="basket__b">Корзина пустая</div>
-		</div>
-		<div class="sign">
-			<div class="sign__text">
-				<span>Вход в</span>
-				<a href="#">Аккаунт</a>
-				<div class="sign__arr"></div>
+			<div class="choice_cy choice_min">
+				<div class="choice__text">Валюта: <a href="#">Гривна<span class="choice__arr"></span></a></div>
+				<div class="choice__drop"></div>
+			</div>
+			<div class="sign">
+				<div class="sign__text">
+					<div>Вход в</div>
+					<a href="#">Аккаунт<span class="sign__arr"></span></a>
+				</div>
+			</div>
+			<div class="basket basket_empty">
+				<div class="basket__g"><span class="basket__ico"></span></div>
+				<div class="basket__b">Корзина пустая</div>
 			</div>
 		</div>
+		<!-- END header__bottom -->
 	</div>
 </div>
 <!-- END header-->
 <div class="top-nav">
-	<ul>
-		<li><a href="#">App Store</a></li>
-		<li><a href="#">iPhone</a></li>
-		<li><a href="#">iPad</a></li>
-		<li><a href="#">iPad Mini</a></li>
-		<li><a href="#">iPod</a></li>
-		<li><a href="#">MacBook</a></li>
-		<li><a href="#">iMac</a></li>
-		<li><a href="#">Аксессуары</a></li>
-	</ul>
+	<div class="top-nav__holder">
+		<ul>
+			<li><a href="#">App Store</a></li>
+			<li><a href="#">iPhone</a></li>
+			<li><a href="#">iPad</a></li>
+			<li><a href="#">iPad Mini</a></li>
+			<li><a href="#">iPod</a></li>
+			<li><a href="#">MacBook</a></li>
+			<li><a href="#">iMac</a></li>
+			<li><a href="#">Аксессуары</a></li>
+		</ul>
+	</div>
 </div>
+
+
 </body>
 </html>

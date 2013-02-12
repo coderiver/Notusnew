@@ -6,3 +6,53 @@
 $experimental-support-for-svg: true;
 // global sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
+// responsive
+/*$break-1: 550px;
+$break-2: 619px;
+$break-3: 779px;
+$break-4: 960px;
+$break-5: 1182px;
+@mixin respond-to($media) {
+	@if $media == mob {
+		@media only screen and (max-width: $break-1) { @content; }
+	}
+	@else if $media == mob-lan {
+		@media only screen and (max-width: $break-2) { @content; }
+	}
+	@else if $media == pda {
+		@media only screen and (max-width: $break-3) { @content; }
+	}
+	@else if $media == med {
+		@media only screen and (max-width: $break-4) { @content; }
+	}
+	@else if $media == large {
+		@media only screen and (max-width: $break-5) { @content; }
+	}
+}*/
+// responsive
+$break-small: 960px;
+$break-step4: 1000px;
+$break-step3: 1050px;
+$break-step2: 1120px;
+$break-step1: 1200px;
+$break-large: 1220px;
+@mixin respond-to($media) {
+	@if $media == little {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+	@else if $media == step1 {
+		@media only screen and (max-width: $break-step1) { @content; }
+	}
+	@else if $media == step2 {
+		@media only screen and (max-width: $break-step2) { @content; }
+	}
+	@else if $media == step3 {
+		@media only screen and (max-width: $break-step3) { @content; }
+	}
+	@else if $media == step4 {
+		@media only screen and (max-width: $break-step4) { @content; }
+	}
+	@else if $media == large {
+		@media only screen and (min-width: $break-large) { @content; }
+	}
+}

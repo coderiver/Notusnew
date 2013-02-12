@@ -1,16 +1,5 @@
 @import "compass/css3";
 
-// responsive
-$break-small: 942px;
-$break-large: 1152px;
-@mixin respond-to($media) {
-  @if $media == pda {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == wide {
-    @media only screen and (min-width: $break-large) { @content; }
-  }
-}
 // retina bg
 @mixin retina{
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {

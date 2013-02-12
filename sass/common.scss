@@ -24,14 +24,13 @@ body{
 		size: 12px;
 	  	}
 	line-height:1.4;
-	background: #ffff00;
 }
 // resets
 a img,fieldset{
 	border:none;
 	}
 a{
-	color:#00919e;
+	color:#017ecb;
 	&:hover{
 		text-decoration:none;
 	}
@@ -39,15 +38,17 @@ a{
 .header{
 	width: 1152px;
 	margin:0 auto;
-	padding:8px 24px 0;
 	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	background: #FFF;
+	background: #fff;
 	a{
 		color:#017ecb;
 	}
 	strong{
 		font-weight: normal;
 		font-family: 'HelveticaNeueBold', Helvetica, Arial, sans-serif;
+	}
+	.header__holder{
+		padding:8px 24px 0;
 	}
 	.header__top{
 		display: inline-block;
@@ -58,7 +59,7 @@ a{
 		float: left;
 		font-size: 12px;
 		color: #383838;
-		width: 230px;
+		width: 200px;
 		span{
 			display: block;
 			margin: -6px 0 0 60px;
@@ -72,17 +73,16 @@ a{
 			height: 100%;
 		}
 	}
-	.header__block{
-		float: left;
-		padding:20px 22px 0 20px;
-	}
 	.header__block1{
-		@extend .header__block;
-		width: 180px;
+		float: left;
+		padding:20px 0 0 30px;
+		width: 187px;
+		margin-left: 2.2%;
 	}
 	.header__block2{
-		@extend .header__block;
-		width: 130px;
+		float: left;
+		padding:20px 0 0 30px;
+		width: 140px;
 	}
 	.timetable{
 		font-size: 14px;
@@ -102,12 +102,14 @@ a{
 			font-size: 12px;
 			color:#383838;
 			display: inline-block;
-			a{}
+			a{
+				white-space: nowrap;
+			}
 		}
 		.choice__arr{
 			@include sized-sprite($icons, "arr_b2");
 			display: inline-block;
-			margin-left: 2px;
+			margin-left: 5px;
 			vertical-align: top;
 		}
 		.choice__drop{
@@ -117,7 +119,12 @@ a{
 	.choice_cy{
 		@extend .choice;
 		float: left;
-		//display: none;
+		margin: 14px 1% 0 1.65%;
+	}
+	.choice_min{
+		width: 70px;
+		line-height: 1.2;
+		margin: 8px 1% 0 2%;
 	}
 	.phone-num{
 		font-size: 18px;
@@ -136,7 +143,8 @@ a{
 	}
 	.call-me{}
 	.menu-top-holder{
-		margin-left: 650px;
+		margin-left: 615px;
+		padding-left: 3%;
 	}
 	.menu-top-frame{
 		display: table-cell;
@@ -169,26 +177,41 @@ a{
 		strong{
 			display: block;
 		}
+		@include respond-to(step1) {
+			padding-right: 20px;
+		}
 	}
 	.catalog__arr{
 		display: inline-block;
 		@include sized-sprite($icons, "arr_b1");
 		vertical-align: middle;
-		margin-left: 8px;
+		margin-left: 12px;
+		position: relative;
+		top:-2px;
 	}
 	.catalog__drop{}
 	.search{
 		float: left;
-		margin: 7px 0 0 44px;
+		margin: 6px 0 0 3.9%;//45px
+		width: 46.15%;
+		@include respond-to(step1) {
+			margin-left: 1%;
+		}
+		@include respond-to(step2) {width: 43%;}
+		@include respond-to(step3) {width: 40%;}
+		@include respond-to(step4) {width: 36.8%;}
+		form{width: 100%;}
 	}
 	.search__holder{
 		float: left;
 		height: 36px;
 		box-shadow:0 1px 3px rgba(0,0,0,.5) inset;
 		border-radius:3px;
+		width: 80.6%;
 	}
 	.search__category{
 		float: left;
+		width: 29%;
 	}
 	.search__category-text{
 		cursor: pointer;
@@ -197,26 +220,34 @@ a{
 		line-height: 35px;
 		color:#383838;
 		background: #eeeeee;
-		padding: 0 9px 0 16px;
+		padding: 0 7% 0 13%;
+		width: 80%;
 		border-radius:3px 0 0 3px;
+		white-space: nowrap;
+		overflow: hidden;
 		@include background(linear-gradient(top, rgba(0,0,0,.04) 0%,rgba(0,0,0,.07) 66%,rgba(0,0,0,.07) 100%));
 	}
 	.search__arr{
 		display: inline-block;
 		vertical-align: middle;
 		@include sized-sprite($icons, "arr_b3");
-		margin-left: 12px;
+		margin-left: 10px;
 	}
 	.search__category-drop{
 		display: none;
+		width: 29%;
 	}
-	.search__input{
-		height: 36px;
-		border:0;
-		background: transparent;
+	.search__input {
+		width: 65%;
 		float: left;
-		padding: 0 12px;
-		width: 280px;
+		padding: 0 3%;
+		input{
+			height: 36px;
+			border:0;
+			background: transparent;
+			width: 100%;
+
+		}
 	}
 	.search__btn{
 		float: left;
@@ -228,10 +259,12 @@ a{
 		background: #d6d5d5;
 		@include background(linear-gradient(top, #e5e4e4 0%,#d7d6d6 62%,#d6d5d5 100%));
 		box-shadow:0 1px 1px rgba(0,0,0,.4), 0 0 2px rgba(white,.1) inset;
-		padding: 0 24px;
+		//padding: 0 21px;
+		width: 18.4%;
+		text-align: center;
 		border:0;
 		border-radius:3px;
-		margin-left: 5px;
+		margin-left: 1%;
 		cursor: pointer;
 		&:hover{
 			background: #e8e8e8;
@@ -243,7 +276,8 @@ a{
 		}
 	}
 	.basket{
-		float: left;
+		float: right;
+		margin: 6px 1px 0 0;
 		height: 36px;
 		box-shadow:0 1px 1px rgba(0,0,0,.4);
 		line-height: 36px;
@@ -269,41 +303,93 @@ a{
 			box-shadow: 0 0 2px rgba(white,.1) inset;
 			color:#fff;
 			text-shadow:0 1px 0 rgba(0,0,0,.3);
-			padding: 0 14px;
+			padding: 0 11px;
 		}
 		.basket__ico{
 			@include sized-sprite($icons, "basket");
 			display: inline-block;
 			vertical-align: middle;
+			margin: 0 3px 0 -4px;
+			position: relative;
+			top:-1px;
+		}
+		.basket__arr{
+			@include sized-sprite($icons, "arr_b5");
+			display: inline-block;
+			margin: 0 -3px 0 3px;
+		}
+		.basket__num{
+			display: inline-block;
+			height: 24px;
+			width: 24px;
+			vertical-align: middle;
+			line-height: 24px;
+			text-align: center;
+			border-radius:50%;
+			color:#fff;
+			text-shadow:0 1px 0 rgba(0,0,0,.3);
+			font-size: 16px;
+			background: #0186dd;
+			margin: 0 -3px 0 4px;
+			position: relative;
+			top:-2px;
+			box-shadow:0 1px 0 rgba(white,.36), 0 -1px 1px rgba(0,0,0,.4) inset;
 		}
 	}
+	.basket_empty{
+		.basket__ico{margin: 0;}
+		.basket__b, .basket__g{padding: 0 14px; }
+	}
 	.sign{
-		display: none;
+		float: right;
+		margin: 10px 0.6% 0 1.9%;
 		.sign__text{
-			span{}
-			a{}
+			color: #383838;
+			font-size: 12px;
+			line-height: 1;
+			a{
+				font-family: 'HelveticaNeueBold', Helvetica, Arial, sans-serif;
+				font-size: 13px;
+			}
 		}
-		.sign__arr{}
+		.sign__arr{
+			@include sized-sprite($icons, "arr_b4");
+			display: inline-block;
+			margin-left: 7px;
+		}
 	}
 }
 .top-nav{
-	background: url(../img/bg-nav.png);
+	background: url(../img/bg-nav.png) repeat-x;
 	ul{
-		width: 1152px;
-		margin: 0 auto;
 		padding: 0 24px;
 	}
 	li{
-		height: 34px;
-		line-height: 34px;
+		height: 21px;
+		line-height: 21px;
 		list-style: none;
 		display: inline-block;
-		margin: 0 20px 0 15px;
+		margin: 0 19px 0 15px;
 		font-size: 12px;
+		padding-bottom: 7px;
 	}
 	a{
 		text-decoration: none;
 		color:#000;
 		&:hover{text-decoration: underline;}
+	}
+}
+.top-nav__holder{
+	background: url(../img/bg-nav.png) repeat-x;
+	width: 1200px;
+	margin: 0 auto;
+}
+.header, .top-nav__holder{
+	width: 100%;
+	@include respond-to(large) {
+		width: 1200px;
+	}
+	@include respond-to(little) {
+		width: 942px;
 	}
 }
