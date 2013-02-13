@@ -116,7 +116,7 @@ a:hover { text-decoration: none; }
 .header .suggest { padding: 5px 0 0; }
 .header .suggest .item__media { width: 90px; height: 70px; }
 .header .suggest .item__media img { max-height: 70px; max-width: 90px; }
-.header .suggest .item__title { font-size: 14px; margin: -3px 10px 0 91px; font-family: 'HelveticaNeueBold', Helvetica, Arial, sans-serif; }
+.header .suggest .item__title { font-size: 14px; margin: -3px 10px 0 91px; height: 37px; font-family: 'HelveticaNeueBold', Helvetica, Arial, sans-serif; }
 .header .suggest .item__price { font-size: 14px; height: 30px; line-height: 30px; width: 104px; float: none; display: inline-block; }
 .header .suggest .item { padding: 4px 10px; }
 .header .suggest .item a { border-width: 2px; padding: 9px 0 5px; }
