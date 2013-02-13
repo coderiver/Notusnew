@@ -27,7 +27,7 @@ a:hover { text-decoration: none; }
 .header .header__block2 { float: left; padding: 20px 0 0 30px; width: 140px; }
 .header .timetable { font-size: 14px; color: #000; position: relative; margin-bottom: 5px; }
 .header .clock { background: url('../img/icons-sb9a664eba7.png') 0 -155px no-repeat; width: 20px; height: 20px; display: block; position: absolute; top: 0; left: -27px; }
-.header .choice, .header .choice_cy { font-size: 12px; width: 115px; line-height: 1.2; margin: 8px 1% 0 2%; }
+.header .choice, .header .choice_cy { font-size: 12px; width: 110px; line-height: 1.2; margin: 8px 1% 0 2%; }
 .header .choice dl, .header .choice_cy dl { height: 35px; display: table-cell; vertical-align: middle; }
 .header .choice dt, .header .choice_cy dt { display: inline-block; color: #383838; }
 .header .choice dd, .header .choice_cy dd { display: inline-block; position: relative; }
