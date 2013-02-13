@@ -369,9 +369,9 @@ a{
 		position: relative;
 	}
 	.search__category{
-		float: left;
-		width: 29%;
-		position: relative;
+		position: absolute;
+		top:0;
+		left:0;
 		cursor: pointer;
 	}
 	.search__category-text{
@@ -380,8 +380,7 @@ a{
 		font-size: 12px;
 		line-height: 35px;
 		color:#383838;
-		padding: 0 10%;
-		width: 80%;
+		padding: 0 30px 0 12px;
 		border-radius:3px 0 0 3px;
 		white-space: nowrap;
 		span{
@@ -396,13 +395,10 @@ a{
 		position: absolute;
 		top:50%;
 		margin-top: -6px;
-		right:7.5%;
+		right:9px;
 		@include sized-sprite($icons, "arr_b3");
 		background-color: #eee;
 		border:4px solid #eee;
-		@include respond-to(step1) {
-			right: 3%;
-		}
 	}
 	.search__category-drop{
 		height: 36px;
@@ -413,9 +409,7 @@ a{
 		opacity:0;
 	}
 	.search__input {
-		width: 65%;
-		float: left;
-		padding: 0 3%;
+		padding: 0 12px;
 		input{
 			height: 36px;
 			border:0;
