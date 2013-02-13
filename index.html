@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN  header-->
@@ -20,10 +22,16 @@
 			<div class="header__block1">
 				<div class="timetable"><span class="clock"></span>Ежедневно с 9:00 до 20:00</div>
 				<!--
-				<div class="choice">
-					<div class="choice__text">Город <a href="#">Липецк<span class="choice__arr"></span></a></div>
-					<div class="choice__drop"></div>
-				</div>
+				<div class="choice_cy"><dl>
+					<dt>Город: </dt>
+					<dd>
+						<a class="choice__text" href="#"><span>Липецк</span><div class="choice__arr"></div></a>
+						<ul class="choice__drop" style="display: none;">
+							<li><a href="#">Киев</a></li>
+							<li><a href="#">Белая церковь(9.1)</a></li>
+						</ul>
+					</dd>
+				</dl></div>
 				-->
 			</div>
 
@@ -57,12 +65,11 @@
 				<div class="catalog__drop">
 					<ul>
 						<li>
-							<a href="#">
-								<strong>Apple Store</strong>Лучшая техника Apple в магазинах
-							</a>
-							<div>
-								<div>
-									<div>
+							<span class="drop-arr"></span>
+							<a href="#"><strong>Apple Store</strong>Лучшая техника Apple в магазинах</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
 										<h2>ТВ, Видео техника</h2>
 										<ul>
 											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
@@ -72,41 +79,214 @@
 											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
 										</ul>
 									</div>
-									<div>
+									<div class="catalog__col">
 										<h2>Фото, Аудио техника</h2>
 										<ul>
 											<li><a href="#"><strong>Фотокамеры</strong></a></li>
-											<li><a href="#"><strong>Видеокамеры</strong></a></li>
-											<li><a href="#"><strong></strong></a>Разные видеокамеры, аксессуары</li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
 											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
 										</ul>
 									</div>
 								</div>
-								<div>
-									<h2><a href="#"></a></h2>
-									<p></p>
-									<a href="#"></a>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
 								</div>
-								<img src="img/promo.png" class="promo-img">
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
 							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>Компьютерная и офисная техника</strong>Лучшая компьютерная техника</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>Телефоны, планшеты, GPS</strong>Лучшая компьютерная техника</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>ТВ, фото и видео, аудио</strong>Я всегда с собой беру видеокамеру</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>Игры, спорт, туризм</strong>покупайте здесь всю технику</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>Бытовая техника</strong>бытовая техника самая бытовая</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 						<li>
+							<span class="drop-arr"></span>
 							<a href="#"><strong>Детский мир</strong>техника детская и стальная</a>
+							<div class="catalog__drop2">
+								<div class="catalog__l">
+									<div class="catalog__col">
+										<h2>ТВ, Видео техника</h2>
+										<ul>
+											<li><a href="#"><strong>Домашнее видео и Театры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеоплееры, аксессуары</strong></a></li>
+											<li><a href="#"><strong>Старые телевизоры</strong></a></li>
+											<li><a href="#"><strong>Аудиоплееры</strong></a></li>
+										</ul>
+									</div>
+									<div class="catalog__col">
+										<h2>Фото, Аудио техника</h2>
+										<ul>
+											<li><a href="#"><strong>Фотокамеры</strong></a></li>
+											<li><a href="#"><strong>Видеокамеры</strong>Разные видеокамеры, аксессуары</a></li>
+											<li><a href="#"><strong>Аудиотехника для сада и города</strong></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="catalog__promo">
+									<h2>Покупайте супер ноутбук!</h2>
+									<p>Планшет+Телефон тоже за деньги.</p>
+									<a href="#">Подробнее</a>
+								</div>
+								<a href="#" class="promo-img"><img src="img/promo.png" ></a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -122,18 +302,73 @@
 							<div class="search__category-drop"></div>
 						</div>
 						<div class="search__input"><input type="text" placeholder="Поиск"></div>
+						<div class="suggest">
+							<div class="item"><a href="#">
+								<div class="item__media"><img src="img/img_11.jpg" alt=""></div>
+								<span class="item__title">Apple iMac 21,5” Silver (MC812)</span>
+								<div class="item__price">10 605 грн</div>
+								<div class="available"><span class="ico-available"></span>Есть в наличии</div>
+							</a></div>
+							<div class="item"><a href="#">
+								<div class="item__media"><img src="img/img_12.jpg" alt=""></div>
+								<span class="item__title">Apple iPad 4 Retina Wi-Fi + 3G 32Gb (Black)</span>
+								<div class="item__price">5 605 грн</div>
+							</a></div>
+							<div class="item"><a href="#">
+								<div class="item__media"><img src="img/img_13.jpg" alt=""></div>
+								<span class="item__title">Apple iPod Touch 5G 32Gb (MD749) Red</span>
+								<div class="item__price">3 444 грн</div>
+							</a></div>
+							<div class="item"><a href="#">
+								<div class="item__media"><img src="img/img_14.jpg" alt=""></div>
+								<span class="item__title">Apple iPhone 5 16Gb Neverlock (Black)</span>
+								<div class="item__price">8 444 грн</div>
+							</a></div>
+							<div class="item__last">
+								<a href="#">Все результаты поиска (4)</a>
+							</div>
+						</div>
 					</div>
 					<input type="submit" class="search__btn" value="Искать">
 				</form>
 			</div>
 
-			<div class="choice_cy">
-				<div class="choice__text">Валюта: <a href="#">гривна<span class="choice__arr"></span></a></div>
-				<div class="choice__drop"></div>
-			</div>
+			<div class="choice_cy"><dl>
+				<dt>Валюта: </dt>
+				<dd>
+					<a class="choice__text" href="#"><span>гривна</span><div class="choice__arr"></div></a>
+					<ul class="choice__drop" style="display: none;">
+						<li><a href="#">гривна</a></li>
+						<li><a href="#">Грн. (8.2)</a></li>
+						<li><a href="#">Безнал. (9.1)</a></li>
+						<li><a href="#">WMU (10.99)</a></li>
+					</ul>
+				</dd>
+			</dl></div>
 			<div class="basket">
 				<div class="basket__g"><span class="basket__ico"></span> Корзина <span class="basket__num">2</span></div>
 				<div class="basket__b">20 000 грн <span class="basket__arr"></span></div>
+				<div class="basket__drop">
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_01.jpg" alt=""></div>
+						<span class="item__title">Apple iMac 21,5” Silver (MC812)</span>
+						<div class="item__price">100 605 грн</div>
+						<span class="item__count">Кол-во: 10</span>
+					</a></div>
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_02.jpg" alt=""></div>
+						<span class="item__title">Apple iPad 4 Retina Wi-Fi + 3G 32Gb (B...</span>
+						<div class="item__price">7 605 грн</div>
+						<span class="item__count">Кол-во: 1</span>
+					</a></div>
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_03.jpg" alt=""></div>
+						<span class="item__title">Apple iPod Touch 5G 32Gb (MD749) ...</span>
+						<div class="item__price">4 605 грн</div>
+						<span class="item__count">Кол-во: 1</span>
+					</a></div>
+					<a href="#" class="btn-items"><strong>Смотреть корзину</strong> <span>(11 товаров)</span></a>
+				</div>
 			</div>
 		</div>
 		<!-- END header__bottom -->
@@ -167,7 +402,7 @@
 					товаров магазина
 					<span class="catalog__arr"></span>
 				</div>
-				<div class="catalog__drop"></div>
+				<div class="catalog__drop" style="display:none;"></div>
 			</div>
 			<div class="search">
 				<form action="#">
@@ -185,10 +420,17 @@
 				</form>
 			</div>
 
-			<div class="choice_cy">
-				<div class="choice__text">Валюта: <a href="#">гривна<span class="choice__arr"></span></a></div>
-				<div class="choice__drop"></div>
-			</div>
+			<div class="choice_cy"><dl>
+				<dt>Валюта: </dt>
+				<dd>
+					<a class="choice__text" href="#"><span>гривна</span><div class="choice__arr"></div></a>
+					<ul class="choice__drop" style="display: none;">
+						<li><a href="#">Грн. (8.2)</a></li>
+						<li><a href="#">Безнал. (9.1)</a></li>
+						<li><a href="#">WMU (10.99)</a></li>
+					</ul>
+				</dd>
+			</dl></div>
 			<div class="basket basket_empty_big">
 				<div class="basket__g"><span class="basket__ico"></div>
 				<div class="basket__b">Корзина пустая</div>
@@ -204,7 +446,7 @@
 					товаров магазина
 					<span class="catalog__arr"></span>
 				</div>
-				<div class="catalog__drop"></div>
+				<div class="catalog__drop" style="display:none;"></div>
 			</div>
 			<div class="search">
 				<form action="#">
@@ -222,17 +464,24 @@
 				</form>
 			</div>
 
-			<div class="choice_cy choice_min">
-				<div class="choice__text">Валюта: <a href="#">Гривна<span class="choice__arr"></span></a></div>
-				<div class="choice__drop"></div>
-			</div>
+			<div class="choice_cy choice_min"><dl>
+				<dt>Валюта: </dt>
+				<dd>
+					<a class="choice__text" href="#"><span>гривна</span><div class="choice__arr"></div></a>
+					<ul class="choice__drop" style="display: none;">
+						<li><a href="#">Грн. (8.2)</a></li>
+						<li><a href="#">Безнал. (9.1)</a></li>
+						<li><a href="#">WMU (10.99)</a></li>
+					</ul>
+				</dd>
+			</dl></div>
 			<div class="sign">
 				<div class="sign__text">
 					<div>Вход в</div>
 					<a href="#">Аккаунт<span class="sign__arr"></span></a>
 				</div>
 			</div>
-			<div class="basket basket_empty">
+			<div class="basket basket_empty basket_min">
 				<div class="basket__g"><span class="basket__ico"></span></div>
 				<div class="basket__b">Корзина пустая</div>
 			</div>
@@ -247,7 +496,7 @@
 					товаров магазина
 					<span class="catalog__arr"></span>
 				</div>
-				<div class="catalog__drop"></div>
+				<div class="catalog__drop" style="display:none;"></div>
 			</div>
 			<div class="search">
 				<form action="#">
@@ -265,19 +514,47 @@
 				</form>
 			</div>
 
-			<div class="choice_cy choice_min">
-				<div class="choice__text">Валюта: <a href="#">Гривна<span class="choice__arr"></span></a></div>
-				<div class="choice__drop"></div>
-			</div>
+			<div class="choice_cy choice_min"><dl>
+				<dt>Валюта: </dt>
+				<dd>
+					<a class="choice__text" href="#"><span>гривна</span><div class="choice__arr"></div></a>
+					<ul class="choice__drop" style="display: none;">
+						<li><a href="#">Грн. (8.2)</a></li>
+						<li><a href="#">Безнал. (9.1)</a></li>
+						<li><a href="#">WMU (10.99)</a></li>
+					</ul>
+				</dd>
+			</dl></div>
 			<div class="sign">
 				<div class="sign__text">
 					<div>Вход в</div>
 					<a href="#">Аккаунт<span class="sign__arr"></span></a>
 				</div>
 			</div>
-			<div class="basket">
-				<div class="basket__g"><span class="basket__ico"></span><span class="basket__num">0</span></div>
+			<div class="basket basket_min">
+				<div class="basket__g"><span class="basket__ico"></span><span class="basket__num">12</span></div>
 				<div class="basket__b">0 грн <span class="basket__arr"></span></div>
+				<div class="basket__drop">
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_01.jpg" alt=""></div>
+						<span class="item__title">Apple iMac 21,5” Silver (MC812)</span>
+						<div class="item__price">100 605 грн</div>
+						<span class="item__count">Кол-во: 10</span>
+					</a></div>
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_02.jpg" alt=""></div>
+						<span class="item__title">Apple iPad 4 Retina Wi-Fi + 3G 32Gb (B...</span>
+						<div class="item__price">7 605 грн</div>
+						<span class="item__count">Кол-во: 1</span>
+					</a></div>
+					<div class="item"><a href="#">
+						<div class="item__media"><img src="img/img_03.jpg" alt=""></div>
+						<span class="item__title">Apple iPod Touch 5G 32Gb (MD749) ...</span>
+						<div class="item__price">4 605 грн</div>
+						<span class="item__count">Кол-во: 1</span>
+					</a></div>
+					<a href="#" class="btn-items"><strong>Смотреть корзину</strong> <span>(11 товаров)</span></a>
+				</div>
 			</div>
 		</div>
 		<!-- END header__bottom -->
