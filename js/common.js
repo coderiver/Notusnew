@@ -24,9 +24,14 @@ $(document).ready(function() {
 		$('.search__holder .suggest').fadeOut(500);
 	});
 // search category
-	$('.search__input').css('padding-left',$('.search__category-drop').width()+12+'px');
+	var sw = $('.search__category-drop').width();
+	if (($('.search__holder').width()<360) && (sw>122)) {sw = 122; $('.search__category-text').width(80);};
+	$('.search__input').css('padding-left',sw+12+'px');
 	$('.search__category-drop').change(function() {
 		$('.search__category-text span').html($(this).val());
-		$('.search__input').css('padding-left',$('.search__category-drop').width()+12+'px');
+		var sw1 = $('.search__category-drop').width();
+		if (($('.search__holder').width()<360) && (sw1>122)) {sw1 = 122; $('.search__category-text').width(80);}
+		else {$('.search__category-text').css('width','auto')};
+		$('.search__input').css('padding-left',sw1+12+'px');
 	});
 });
