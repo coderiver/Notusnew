@@ -372,6 +372,7 @@ a{
 		float: left;
 		width: 29%;
 		position: relative;
+		cursor: pointer;
 	}
 	.search__category-text{
 		cursor: pointer;
@@ -404,8 +405,12 @@ a{
 		}
 	}
 	.search__category-drop{
-		display: none;
-		width: 29%;
+		height: 36px;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		opacity:0;
 	}
 	.search__input {
 		width: 65%;
