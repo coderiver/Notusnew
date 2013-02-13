@@ -1,0 +1,10 @@
+.lteie8 .header, .lteie8 .top-nav__holder { width: 960px; }
+.lteie8 .top-nav, .lteie8 .top-nav__holder { background: url(../img/bg-nav.png); }
+.lteie8 .basket__drop, .lteie8 .suggest { border: 1px solid #c4c4c4; }
+.lteie8 .header .search { width: 343px; margin-left: 9px; }
+.lteie8 .header .search__holder { outline: 1px solid #c4c4c4; }
+.lteie8 .choice { margin-left: 1%; }
+
+* + html .top-nav li { display: inline; }
+
+* + html .header .menu-top li { display: inline; }

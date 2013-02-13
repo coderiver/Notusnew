@@ -1,5 +1,21 @@
 .lteie8{
-	body{
-		
+	.header, .top-nav__holder{width: 960px;}
+	.top-nav, .top-nav__holder{background: url(../img/bg-nav.png) }
+	.basket__drop, .suggest{
+		border:1px solid #c4c4c4;
 	}
+	.header {
+		.search{
+			width: 343px;
+			margin-left: 9px;
+		}
+		.search__holder{
+			outline:1px solid #c4c4c4;
+		}
+	}
+	.choice{margin-left: 1%;}
+	
 }
+*+ html .top-nav li{display: inline;}
+
+*+ html .header .menu-top li{display: inline;}
