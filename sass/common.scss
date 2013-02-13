@@ -379,7 +379,6 @@ a{
 		font-size: 12px;
 		line-height: 35px;
 		color:#383838;
-		background: #eeeeee;
 		padding: 0 10%;
 		width: 80%;
 		border-radius:3px 0 0 3px;
@@ -417,7 +416,7 @@ a{
 			border:0;
 			background: transparent;
 			width: 100%;
-			line-height: 36px;
+			outline:none;
 		}
 	}
 	.search__btn{

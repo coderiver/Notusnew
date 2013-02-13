@@ -3,6 +3,8 @@
 .lteie8 .basket__drop, .lteie8 .suggest { border: 1px solid #c4c4c4; }
 .lteie8 .header .search { width: 343px; margin-left: 9px; }
 .lteie8 .header .search__holder { outline: 1px solid #c4c4c4; }
+.lteie8 .header .search__category-text { background: #eeeeee; }
+.lteie8 .header .search__input input { line-height: 36px; }
 .lteie8 .choice { margin-left: 1%; }
 
 * + html .top-nav li { display: inline; }

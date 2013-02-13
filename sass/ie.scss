@@ -12,10 +12,10 @@
 		.search__holder{
 			outline:1px solid #c4c4c4;
 		}
+		.search__category-text{background: #eeeeee;}
+		.search__input input{line-height: 36px;}
 	}
 	.choice{margin-left: 1%;}
-	
 }
 *+ html .top-nav li{display: inline;}
-
 *+ html .header .menu-top li{display: inline;}
