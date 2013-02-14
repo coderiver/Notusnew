@@ -226,7 +226,7 @@ a{
 			.catalog__arr{
 				@include sized-sprite($icons, "arr_b5");
 			}
-			.catalog__drop{display: block;}
+			//.catalog__drop{display: block;}
 		}
 	}
 	.catalog__text{
@@ -258,27 +258,27 @@ a{
 		position: absolute;
 		z-index: 10;
 		background: #fff;
-		width: 711px;
+		width: 246px;
 		display: none;
-		ul{
+		.catalog__list{
 			width: 246px;
 			border-radius:0 0 5px 5px;
-			padding: 16px 0 16px;
 			position: relative;
-			li{
-				font-size: 12px;
-				list-style: none;
-				margin: 0 0 15px;
-				line-height: 1.2;
-				&:hover{
-					.drop-arr,.catalog__drop2{display: block;}
-				}
+		}
+		.catalog__item{
+			font-size: 12px;
+			list-style: none;
+			line-height: 1.2;
+			&:hover{
+				.drop-arr/*,.catalog__drop2*/{display: block;}
 			}
+			&:first-child{padding-top: 15px;}
+			&:last-child{padding-bottom: 15px;}
 			a{
 				color:#898989;
 				text-decoration: none;
 				display: block;
-				padding: 0 15px;
+				padding: 7px 15px 8px;
 				&:hover{
 					strong{color:#f7941d;}
 				}
@@ -292,7 +292,7 @@ a{
 			position: absolute;
 			height: 100%;
 			top:0;
-			left:247px;
+			left:246px;
 			background: #fff;
 			width: 463px;
 			border-radius:0 0 5px 0;
@@ -306,6 +306,7 @@ a{
 			float: right;
 			margin: -1px 4px 0 0;
 			display: none;
+			cursor: pointer;
 		}
 		.catalog__l{
 			padding: 12px 0 0 4px;
@@ -319,8 +320,18 @@ a{
 				font-size: 14px;
 				margin: 0 15px;
 			}
-			ul{width: auto;}
-			li{margin: 0 0 10px;}
+			ul{
+				width: auto;
+				padding: 16px 0;
+				}
+			li{
+				font-size: 12px;
+				list-style: none;
+				line-height: 1.2;
+				margin: 0 0 10px;
+				a{padding: 0 15px; }
+			}
+
 		}
 		.catalog__promo{
 			padding: 6px 18px 0;
@@ -373,24 +384,20 @@ a{
 		top:0;
 		left:0;
 		cursor: pointer;
-	}
-	.search__category-text{
-		cursor: pointer;
 		height: 36px;
-		font-size: 12px;
-		line-height: 35px;
-		color:#383838;
+		line-height:36px;
 		padding: 0 30px 0 12px;
 		border-radius:3px 0 0 3px;
-		white-space: nowrap;
-		span{
-			overflow: hidden;
-			width: 100%;
-			display: block;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-		}
 		@include background-image(linear-gradient(top, rgba(0,0,0,.04) 0%,rgba(0,0,0,.07) 66%,rgba(0,0,0,.07) 100%));
+	}
+	.search__category-text{
+		font-size: 12px;
+		color:#383838;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		span{
+		}
 	}
 	.search__arr{
 		display: block;
@@ -409,6 +416,7 @@ a{
 		left:0;
 		width: 100%;
 		opacity:0;
+		z-index: 10;
 	}
 	.search__input {
 		padding: 0 12px;
