@@ -44,7 +44,7 @@ $(document).ready(function() {
 		$('.search__input').css('padding-left',sw1+12+'px');
 	});
 //catalog
-	$('.catalog__list').hoverIntent(
+	$('.catalog__list').hover(
 		function () {
 			$(this).parent().animate({width:"711px"});
 		},
