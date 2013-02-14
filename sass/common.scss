@@ -281,7 +281,10 @@ a{
 				text-decoration: none;
 				display: block;
 				padding: 7px 15px 8px;
-				background: url(../img/arr_r1.png) no-repeat 100% 4px;
+				
+				&:hover{
+					background: url(../img/arr_r1.png) no-repeat 100% 4px;
+				} 
 			}
 			strong{
 				color:#585967;
