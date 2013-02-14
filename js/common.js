@@ -36,7 +36,7 @@ $(document).ready(function() {
 		else {$('.search__category-text').css('width','auto')};
 		$('.search__input').css('padding-left',sw+12+'px');
 
-	$('.search__category-drop').click(function() {
+	$('.search__category-drop').change(function() {
 		$('.search__category-text span').html($(this).val());
 		var sw1 = $('.search__category-text span').width()+42;
 		if (($('.search__holder').width()<360) && (sw1>=122)) {sw1 = 122; $('.search__category-text').width(80);}
